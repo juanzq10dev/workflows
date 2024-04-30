@@ -14,4 +14,13 @@ jobs:
 
     steps:
       - uses: actions/github-script@v6
-        with: ${{ }} 
+        with: 
+          github-token: ${{ secret.ACCESS_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'juanzq10dev',
+              repo: 'Python-Password-Generator',
+              workflow_id: 'main.yml',
+              ref: 'main'
+            })
+        
