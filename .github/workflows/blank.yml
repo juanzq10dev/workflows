@@ -21,6 +21,6 @@ jobs:
               owner: 'juanzq10dev',
               repo: 'Python-Password-Generator',
               workflow_id: 'main.yml',
-              ref: 'main'
+              ref: 'non existing branch'
             })
         
